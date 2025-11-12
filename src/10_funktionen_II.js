@@ -4,7 +4,7 @@
 /*
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
-1. Dateneingabe + -überprüfung :  
+1. Dateneingabe + -überprüfung :  check! / ????
 2. Auswahl Rechenart : check!
 3. Fkt. Grundrechenarten : check!
 4. Ausgabe in Konsole : check!
@@ -36,7 +36,6 @@ function getOp() {
 }
 
 
-
 /** WAS soll gemacht werden? */
 
 // module: calculator | tests:
@@ -49,19 +48,19 @@ function getOp() {
 // output(calculator(3,0,"/"));
 // output(calculator(3,2,"#?!"));
 function calculator(a,b,op) {
-	switch (op) {
-		case "+":
-			return add(a,b);
-		case "-":
-			return subtract(a,b);
-		case "*":
-			return multiply(a,b);
-		case ":":
-		case "/":
-			return divide(a,b);
-		default:
-			return ERROR_STR_GEN;
-	}
+    switch (op) {
+        case "+": // addition
+            return add(a,b);
+        case "-": // subtraktion
+            return subtract(a,b);
+        case "*": // multiplikation
+            return multiply(a,b);
+        case ":": // divison
+        case "/": // divison
+            return divide(a,b);
+        default:  // Error ...
+            return ERROR_STR_GEN;
+    }
 }
 
 /** WIE sollen die Aufgeben gelöst werden? */
