@@ -50,7 +50,7 @@ function startApp() {
 
     /** Kompakt */
 
-    // num1    = num && getNumber("1st");
+    // num1    = isNotAborted && getNumber("1st");
     // op      = isNotAborted && getOp();
     // num2    = isNotAborted && getNumber("2nd");
     // output(isNotAborted ? (calculator(num1,num2,op)): ERROR_STR_ABORT);
