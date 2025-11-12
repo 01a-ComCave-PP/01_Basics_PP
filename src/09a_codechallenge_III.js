@@ -39,9 +39,9 @@ switch (choice) {
 
 console.log("------");
 console.log("Möchten Sie ein Getränk dazu bestellen?");
-choice = prompt("y/n?: ");
+choice =  prompt("y/n?: ").toLowerCase();
 
-if ((choice == "y") || (choice == "Y")) {
+if (choice == "y") {
 
     console.log("------");
     console.log("Cola(1), Fanta(2) oder Sprite(3)?");
